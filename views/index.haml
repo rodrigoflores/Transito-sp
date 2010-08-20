@@ -6,20 +6,20 @@
     %script{:src => "/javascripts/application.js", :type => "text/javascript"}
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
   %body
-    Quantos quilômetros temos de lentidão ?
-    %p= @lentidao 
+    #content
+      %h1
+        %span Trânsito em São Paulo
+        Quantos quilômetros temos de lentidão ?
+      %h2= @lentidao 
     
-    
-    %p 
-      Desenvolvido por 
-      %a{ :href => 'http://twitter.com/rlmflores'} 
-        Rodrigo Flores 
-      e 
-      %a{ :href => 'http://twitter.com/lucasmazza' }
-        Lucas Mazza
-      \. 
-      %br
-      Aguardamos ansiosamente pela doação de um HTML decente.
+      %p 
+        Desenvolvido por 
+        %a{ :href => 'http://twitter.com/rlmflores'} Rodrigo Flores 
+        e 
+        %a{ :href => 'http://twitter.com/lucasmazza' } Lucas Mazza
+        \.
+      %p
+        Aguardamos ansiosamente pela doação de um HTML decente.
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18105749-1']);
