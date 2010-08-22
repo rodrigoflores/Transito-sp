@@ -1,4 +1,4 @@
-!!!
+!!! 5
 %html
   %head
     %title Trânsito de São Paulo
@@ -6,12 +6,12 @@
     %script{:src => "/javascripts/application.js", :type => "text/javascript"}
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
   %body
-    #content
-      %h1
-        %span Trânsito em São Paulo
-        Quantos quilômetros temos de lentidão ?
-      %h2= @lentidao 
-    
+    %header
+      %h1 Trânsito em São Paulo
+    %section#content
+      %h1 Quantos quilômetros temos de lentidão ?
+      %p= @lentidao 
+    %footer
       %p 
         Desenvolvido por 
         %a{ :href => 'http://twitter.com/rlmflores'} Rodrigo Flores 

@@ -1,35 +1,53 @@
  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background: transparent;}body{line-height:1;}ol,ul{list-style: none;}blockquote,q{quotes: none;}blockquote:before,blockquote:after,q:before,q:after{content: '';content: none;}:focus{outline:0;}ins{text-decoration: none;}del{text-decoration: line-through;}table{border-collapse:collapse;border-spacing:0;}
 
-/* Here it goes */
-a { color:#C03030; }
-
-#content {
-	padding:20px;
-	font-size:16px;
+header, section, footer{
+  display:block
 }
 
 body {
-	font:16px Helvetica;
-	color:#222;
-	background-color:#E3E3E3;
+  font:16px/29px Helvetica;
+  color:#222;
+  background-color:#E3E3E3;
 }
+
+/* Here it goes */
+a { color:#C03030; }
+
+header {
+  float:left;
+  padding:20px;
+  font-size:16px;
+}
+
 h1 { font-size:26px; }
-h1 span {
-	font-size:34px;
-}
 
 h1, h2 {
-	text-shadow:2px 2px #CCC;
+  text-shadow:2px 2px #CCC;
 }
 
-h1 span { color:#990000; }
-h2 {
-	color:red;
-	font-weight:bold;
-	font-size:60px;
+header h1{
+  font-size:34px;
+  color:#990000; 
+}
+#content{
+  float:left
+}
+#content h1{
+  display:block;
+  padding: 20px 0;
+}
+#content p{
+  float:left;
+  color:red;
+  font-weight:bold;
+  font-size:60px;
 }
 
-p { font-size:12px; }
+footer{
+  clear:both;
+  padding:20px;
+}
+p { font-size:12px;line-height:18px }
 p a { padding:1px 2px; }
 p a:hover {
 	text-decoration:none;
