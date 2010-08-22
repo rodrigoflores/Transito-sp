@@ -1,10 +1,13 @@
 !!! 5
 %html
   %head
+    %meta{:charset=>"utf-8"}/
     %title Trânsito de São Paulo
-    %link{:href => "/stylesheets/application.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+ 
+    
+    %link{:href => "/stylesheets/application.css", :media => "screen and (min-width:418px)", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/stylesheets/application_mod.css", :media => "screen and (max-width:418px)", :rel => "stylesheet", :type => "text/css"}/
     %script{:src => "/javascripts/application.js", :type => "text/javascript"}
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
   %body
     %header
       %h1 Trânsito em São Paulo
