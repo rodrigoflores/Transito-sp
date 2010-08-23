@@ -37,10 +37,14 @@ header h1{
   padding: 20px 0;
 }
 #content p{
-  color:red;
   font-weight:bold;
   font-size:60px;
+  text-shadow:2px 2px #CCC;
 }
+
+.red { color:red; }
+.yellow { color:yellow; }
+.green { color:green; }
 
 footer{
   clear:both;

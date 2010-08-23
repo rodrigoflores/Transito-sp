@@ -13,7 +13,7 @@
       %h1 Trânsito em São Paulo
     %section#content
       %h1 Quantos quilômetros temos de lentidão ?
-      %p= @lentidao 
+      %p{:class => status_color(@lentidao)}= @lentidao
     %footer
       %p 
         Desenvolvido por 
