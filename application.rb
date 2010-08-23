@@ -3,6 +3,11 @@ require 'sinatra'
 require 'hpricot'
 require 'open-uri'
 require 'haml'
+require 'helpers/application_helper'
+
+helpers do
+  include ApplicationHelper
+end
 
 
 get '/' do
