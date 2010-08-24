@@ -37,7 +37,6 @@ header h1{
 }
 #content p{
   float:left;
-  color:red;
   font-weight:bold;
   font-size:60px;
 }
@@ -49,11 +48,10 @@ footer{
 footer a img{
   display:none
 }
+
+.red { color:red; }
+.yellow { color:yellow; }
+.green { color:green; }
+
 p { font-size:10px;line-height:18px }
 p a { padding:1px 2px; }
-p a:hover {
-	text-decoration:none;
-	color:#FFF;
-	background-color:#C03030;
-}
-
