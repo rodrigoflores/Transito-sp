@@ -58,11 +58,10 @@ p a:hover {
 	background-color:#C03030;
 }
 
-#regioes { margin-top:20px; }
 #regioes li {
 	display:block;
 	width:80px;
-	margin:10px 10px;
+	margin:30px 10px 10px 0px;
 	float:left;
 	text-align:center;
 	border:1px solid #000;
@@ -78,7 +77,6 @@ p a:hover {
 }
 
 #regioes li.norte {
-	margin-left:0px;
 	border-color:#65758F;
 	background:#65758F url(none);
 	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#65758F', endColorstr='#929EB0');

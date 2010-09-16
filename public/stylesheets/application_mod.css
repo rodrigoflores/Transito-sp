@@ -56,13 +56,10 @@ footer a img{
 p { font-size:10px;line-height:18px }
 p a { padding:1px 2px; }
 
-
-
-#regioes { margin-top:20px; }
 #regioes li {
 	display:block;
 	width:80px;
-	margin:10px 10px;
+	margin:30px 10px 10px 0px;
 	float:left;
 	text-align:center;
 	border:1px solid #000;
@@ -76,7 +73,6 @@ p a { padding:1px 2px; }
 }
 
 #regioes li.norte {
-	margin-left:0px;
 	border-color:#65758F;
 	background:-webkit-gradient(linear, left top, left bottom, from(#65758F), to(#929EB0));
 }
