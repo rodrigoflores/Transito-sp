@@ -26,10 +26,10 @@ h1, h2 {
 
 header h1{
   font-size: 20px;
-  color:#990000; 
+  color:#990000;
 }
 #content{
-  padding:0 20px 
+  padding:0 20px
 }
 #content h1{
   display:block;
@@ -55,3 +55,45 @@ footer a img{
 
 p { font-size:10px;line-height:18px }
 p a { padding:1px 2px; }
+
+
+
+#regioes { margin-top:20px; }
+#regioes li {
+	display:block;
+	width:80px;
+	margin:10px 10px;
+	float:left;
+	text-align:center;
+	border:1px solid #000;
+	-moz-border-radius:9px;
+	background:#FFF url(/images/gradient.png) repeat-x 0 10px;
+}
+
+#regioes strong {
+	color:#E9FCCC;
+	font-size:30px;
+}
+
+#regioes li.norte {
+	margin-left:0px;
+	border-color:#65758F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#65758F), to(#929EB0));
+}
+
+#regioes li.leste {
+	border-color:#82618F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#82618F), to(#AA94B3));
+}
+#regioes li.centro {
+	border-color:#A85777;
+	background:-webkit-gradient(linear, left top, left bottom, from(#A85777), to(#C28AA0));
+}
+#regioes li.oeste {
+	border-color:#72895F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#72895F), to(#9FAF93));
+}
+#regioes li.sul {
+	border-color:#9A7A63;
+	background:-webkit-gradient(linear, left top, left bottom, from(#9A7A63), to(#BAA595));
+}
