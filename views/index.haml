@@ -3,8 +3,8 @@
   %head
     %meta{:charset=>"utf-8"}/
     %title Trânsito de São Paulo
- 
-    
+
+
     %link{:href => "/stylesheets/application.css", :media => "screen and (min-width:418px)", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/stylesheets/application_mod.css", :media => "screen and (max-width:418px)", :rel => "stylesheet", :type => "text/css"}/
     %script{:src => "/javascripts/application.js", :type => "text/javascript"}
@@ -14,28 +14,35 @@
     %section#content
       %h1 Quantos quilômetros temos de lentidão ?
       %p{:class => status_color(@lentidao)}= @lentidao
+
+      %ul#regioes
+        - @regioes.each do |regiao, lentidao|
+          %li{:class => regiao }
+            %h4= regiao.capitalize
+            %strong= lentidao
+
     %footer
-      %p 
-        Desenvolvido por 
-        %a{ :href => 'http://twitter.com/rlmflores'} Rodrigo Flores 
-        , 
+      %p
+        Desenvolvido por
+        %a{ :href => 'http://twitter.com/rlmflores'} Rodrigo Flores
+        ,
         %a{ :href => 'http://twitter.com/lucasmazza' } Lucas Mazza
-        e com contribuições de 
+        e com contribuições de
         %a{ :href => 'http://twitter.com/emersonvinicius'} Emerson Vinicius
-        \.  
+        \.
       %a{:href=> "http://github.com/rodrigoflores/transito-sp"}
         %img{:style=>"position: absolute; top: 0pt; right: 0pt; border: 0pt none;", :src => "http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png", :alt => "Fork me on github"}
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18105749-1']);
     _gaq.push(['_trackPageview']);
-      
+
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-      
-      
 
-    
+
+
+

@@ -26,7 +26,7 @@ h1, h2 {
 
 header h1{
   font-size:34px;
-  color:#990000; 
+  color:#990000;
 }
 #content{
   padding: 0 20px
@@ -58,3 +58,60 @@ p a:hover {
 	background-color:#C03030;
 }
 
+#regioes { margin-top:20px; }
+#regioes li {
+	display:block;
+	width:80px;
+	margin:10px 10px;
+	float:left;
+	text-align:center;
+	border:1px solid #000;
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	background:#FFF url(/images/gradient.png) repeat-x 0 10px;
+}
+
+#regioes strong {
+	color:#E9FCCC;
+	font-size:30px;
+}
+
+#regioes li.norte {
+	margin-left:0px;
+	border-color:#65758F;
+	background:#65758F url(none);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#65758F', endColorstr='#929EB0');
+	background:-webkit-gradient(linear, left top, left bottom, from(#65758F), to(#929EB0));
+	background:-moz-linear-gradient(top,  #65758F,  #929EB0);
+}
+
+#regioes li.leste {
+	border-color:#82618F;
+	background:#82618F url(none);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#82618F', endColorstr='#AA94B3');
+	background:-webkit-gradient(linear, left top, left bottom, from(#82618F), to(#AA94B3));
+	background:-moz-linear-gradient(top,  #82618F,  #AA94B3);
+}
+#regioes li.centro {
+	border-color:#A85777;
+	background:#A85777 url(none);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#A85777', endColorstr='#C28AA0');
+	background:-webkit-gradient(linear, left top, left bottom, from(#A85777), to(#C28AA0));
+	background:-moz-linear-gradient(top,  #A85777,  #C28AA0);
+
+}
+#regioes li.oeste {
+	border-color:#72895F;
+	background:#72895F url(none);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#72895F', endColorstr='#9FAF93');
+	background:-webkit-gradient(linear, left top, left bottom, from(#72895F), to(#9FAF93));
+	background:-moz-linear-gradient(top,  #72895F,  #9FAF93);
+}
+#regioes li.sul {
+	border-color:#9A7A63;
+	background:#9A7A63 url(none);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#9A7A63', endColorstr='#BAA595');
+	background:-webkit-gradient(linear, left top, left bottom, from(#9A7A63), to(#BAA595));
+	background:-moz-linear-gradient(top,  #9A7A63,  #BAA595);
+}
